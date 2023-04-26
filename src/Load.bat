@@ -12,6 +12,7 @@ if exist "exitsave_1" (
 
 if exist "temp_save" (
     robocopy "temp_save" "exitsave_1" /e
-    echo "exitsave_1" created
+    echo Restored "exitsave_1"!
+    timeout 1 >nul
     exit
 )
