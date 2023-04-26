@@ -3,7 +3,7 @@
 @setlocal enableextensions
 
 @REM Change directory to where this script is located
-@REM @cd /d "%~dp0"
+@cd /d "%~dp0"
 
 @REM === Main Loop ===
 :loop
