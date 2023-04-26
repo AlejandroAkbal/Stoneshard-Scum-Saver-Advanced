@@ -1,8 +1,14 @@
-# Stoneshard Save Scum Advanced
+# Stoneshard Scum Saver Advanced
 
-A small utility to help you save in Stoneshard
+A small utility to help you scum save in Stoneshard
+
+Backs up your `Exit Save` to a temporary directory, so you can load it if you die
+
+> Stoneshard deletes your `Exit Save` when you die
 
 ## Setup
+
+### Download
 
 Download the files
 
@@ -13,18 +19,34 @@ Place them in the same folder as your save file
 
 - `%USERPROFILE%\AppData\Local\StoneShard\characters_v1\character_1`
 
-Create a shortcut to the files and place them on your desktop
+### Create Shortcuts (Optional)
+
+Open `cmd` and create a shortcut to the files and place them on your desktop
 
 ```cmd
 # Save
-mklink "C:\Users\%USERNAME%\Desktop\Save.lnk" "%USERPROFILE%\AppData\Local\StoneShard\characters_v1\character_1\Save.bat"
+mklink "C:\Users\%USERNAME%\Desktop\Save Stoneshard Save.lnk" "%USERPROFILE%\AppData\Local\StoneShard\characters_v1\character_1\Save.bat"
 
 # Load
-mklink "C:\Users\%USERNAME%\Desktop\Load.lnk" "%USERPROFILE%\AppData\Local\StoneShard\characters_v1\character_1\Load.bat"
+mklink "C:\Users\%USERNAME%\Desktop\Load Stoneshard Save.lnk" "%USERPROFILE%\AppData\Local\StoneShard\characters_v1\character_1\Load.bat"
 ```
 
 ## Usage
 
 ### Save
 
-- Run the `Save` shortcut, you only need to do this once, it will run in the background and save your game from `exit_save` to `temp_save` every minute
+Run the `Save` shortcut
+You only need to do this once, each time you play
+
+It will run in the background and backup your game from `exit_save` to the `temp_save` directory. Every minute
+
+### Load
+
+Run the `Load` shortcut
+This will load your backup from `temp_save` to the `exit_save` directory
+
+## Credits
+
+[Stoneshard Scum Saver](https://www.nexusmods.com/stoneshard/mods/3) by [Kramme](https://www.nexusmods.com/stoneshard/users/25657089)
+
+This is just an improved version
