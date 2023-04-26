@@ -36,14 +36,19 @@ mklink "C:\Users\%USERNAME%\Desktop\Load Stoneshard Save.lnk" "%USERPROFILE%\App
 ### Save
 
 Run the `Save` shortcut
-You only need to do this once, each time you play
+
+> You only need to do this once, each time you play
 
 It will run in the background and backup your game from `exit_save` to the `temp_save` directory. Every minute
+
+**To create the `exit_save`, you have to exit to the main menu from the game**
 
 ### Load
 
 Run the `Load` shortcut
-This will load your backup from `temp_save` to the `exit_save` directory
+This will restore your backup from `temp_save` to the `exit_save` directory
+
+Now, you can **load your Exit Save from the main menu**
 
 ## Credits
 
